@@ -1,0 +1,15 @@
+res://addons/modular_sprite_animation_factory/dock/msaf_dock.tscn::174d57b1cbf108403e97513d070f13da::1712258350::res://.godot/exported/133200997/export-808380c78024c8c626c3b262e05d7c63-msaf_dock.scn
+res://res/scene/debug.tscn::41015e6b455323184d21db3db94af104::1733850406::res://.godot/exported/133200997/export-5f32b88f84e0c2d53110626d96973cae-debug.scn
+res://res/scene/door.tscn::ffeb7af1ef10f2b62ac0a3a671b63aa2::1732072020::res://.godot/exported/133200997/export-4eacaa0d3400ef76e3df777d5da52383-door.scn
+res://res/scene/movement_btn.tscn::806e5ad40a071f541e503952e4a0808b::1736383183::res://.godot/exported/133200997/export-c326b8f4ccc5f9a8bed1496d24e13a72-movement_btn.scn
+res://res/scene/player.tscn::52ade7a40af9ec49e6368d2a5d507ae5::1736383169::res://.godot/exported/133200997/export-ca30700d40f336bb19dcdebfdbacce0a-player.scn
+res://res/scene/pressure_plate.tscn::9a1bd2b9de502ab856e196197d87b348::1733889706::res://.godot/exported/133200997/export-8a74aa87577872a144215228c22aedf7-pressure_plate.scn
+res://res/scene/statue.tscn::c2a6e3001b0889ca0c0e7cf7ef90a650::1733843958::res://.godot/exported/133200997/export-0a96f7db22ecc6552669cbbddb02a071-statue.scn
+res://res/asset/menu/btn_new.tres::5001e2b6daec3458173754f72ac9cf2c::1733838541::res://.godot/exported/133200997/export-44f07b93e2491c04cab29c77d6588cf0-btn_new.res
+res://res/scene/level/demo_level.tscn::fbc6b964e3ecbaab081600cb0adfebfc::1736383168::res://.godot/exported/133200997/export-5e2aab3b2823e13689ff6002817fe765-demo_level.scn
+res://res/scene/menu/menu_home.tscn::df20b0b9131406a989a7a97ddda03378::1736383169::res://.godot/exported/133200997/export-08f916860b6a2f627f8dff4f88ec8303-menu_home.scn
+res://res/scene/spawn/kotak.tscn::49a01eb7ab1ef8ed317c830e2153f835::1736383169::res://.godot/exported/133200997/export-b9dbaa44c1860a6fa0171604e771ddcb-kotak.scn
+res://res/global/audio_player.tscn::6d99de383c39a97ab7d5c09aa073d479::1736383169::res://.godot/exported/133200997/export-cf6c3c9de01672407c5925a408cdd404-audio_player.scn
+res://res/scene/spawn/kotakJatuh.tscn::57784a730d2f8dbb6605a0f1c4677afd::1736383169::res://.godot/exported/133200997/export-e93345c35d76e13ea33fcd0b8a8c31e8-kotakJatuh.scn
+res://res/scene/notif.tscn::d46655c776a63c6398c0fbaf1e45b930::1736348795::res://.godot/exported/133200997/export-b292bf3c7b3c2b45f0acd27d6ea37242-notif.scn
+res://res/scene/transitions.tscn::082c5dad264986914d447ff737f9485f::1736349159::res://.godot/exported/133200997/export-5c6bd1433a7d84a1a338011dca364bfd-transitions.scn

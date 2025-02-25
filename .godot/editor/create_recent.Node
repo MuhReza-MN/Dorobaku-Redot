@@ -1,0 +1,14 @@
+Panel
+AudioStreamPlayer
+Label
+VBoxContainer
+BoxContainer
+Sprite2D
+CollisionShape2D
+ShapeCast2D
+Area2D
+Node2D
+RigidBody2D
+AnimationPlayer
+CanvasLayer
+TextEdit
