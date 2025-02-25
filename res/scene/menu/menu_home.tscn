@@ -1,0 +1,102 @@
+[gd_scene load_steps=14 format=3 uid="uid://blm8fs6kfyjdi"]
+
+[ext_resource type="Script" path="res://res/script/menu/menu_home.gd" id="1_msiks"]
+[ext_resource type="Texture2D" uid="uid://bwsuut7nvy1th" path="res://res/asset/menu/bg_beta.png" id="1_rk08b"]
+[ext_resource type="Texture2D" uid="uid://dmqjmgy4rt0ju" path="res://res/asset/menu/JUDUL.png" id="2_nbmhy"]
+[ext_resource type="Texture2D" uid="uid://cbnugxxn52q7t" path="res://res/asset/menu/btn_new.tres" id="3_4gg5u"]
+[ext_resource type="Texture2D" uid="uid://be3s02khqomtw" path="res://res/asset/menu/new_btn.png" id="4_ulqyh"]
+[ext_resource type="PackedScene" uid="uid://blx5obatbc20l" path="res://res/scene/transitions.tscn" id="6_1yiyi"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_051sh"]
+texture = ExtResource("1_rk08b")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xpkjy"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lddou"]
+texture = ExtResource("2_nbmhy")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3hj1f"]
+atlas = ExtResource("4_ulqyh")
+region = Rect2(960, 0, 320, 320)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_oljpc"]
+radius = 160.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v27wa"]
+atlas = ExtResource("4_ulqyh")
+region = Rect2(0, 0, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kf7hn"]
+atlas = ExtResource("4_ulqyh")
+region = Rect2(320, 0, 320, 320)
+
+[node name="MenuHome" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_msiks")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_051sh")
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 113.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel2" type="Panel" parent="Panel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_xpkjy")
+
+[node name="Panel" type="Panel" parent="Panel/VBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(1448, 245)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/panel = SubResource("StyleBoxTexture_lddou")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(1200, 400)
+layout_direction = 2
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+
+[node name="btn_setting" type="TouchScreenButton" parent="Panel/VBoxContainer/HBoxContainer"]
+visible = false
+position = Vector2(92, 8)
+texture_normal = ExtResource("3_4gg5u")
+texture_pressed = SubResource("AtlasTexture_3hj1f")
+shape = SubResource("CircleShape2D_oljpc")
+shape_visible = false
+
+[node name="btn_play" type="TouchScreenButton" parent="Panel/VBoxContainer/HBoxContainer"]
+position = Vector2(460, 41)
+texture_normal = SubResource("AtlasTexture_v27wa")
+texture_pressed = SubResource("AtlasTexture_kf7hn")
+shape = SubResource("CircleShape2D_oljpc")
+shape_visible = false
+
+[node name="loading" parent="." instance=ExtResource("6_1yiyi")]
+visible = false
+
+[connection signal="pressed" from="Panel/VBoxContainer/HBoxContainer/btn_setting" to="." method="_press_btnSetting"]
+[connection signal="pressed" from="Panel/VBoxContainer/HBoxContainer/btn_play" to="." method="_press_btnPlay"]
